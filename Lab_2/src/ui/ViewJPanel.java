@@ -5,6 +5,7 @@
  */
 package ui;
 import com.sun.jdi.connect.spi.Connection;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -730,14 +731,19 @@ public class ViewJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txtsearch7KeyReleased
 
     private void btnfind5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfind5ActionPerformed
-       /*   DefaultTableModel model = (DefaultTableModel) tblUberdata.getModel();
+         DefaultTableModel model = (DefaultTableModel) tblUberdata.getModel();
         model.setRowCount(0);
         Date thisDate = new Date();
         SimpleDateFormat dateForm = new SimpleDateFormat("yyyy-MM-dd");
        
         for(Uber ub : history.getHistory()){
-          
-            if(ub.getdate() > dateForm.toString())
+          Date newDate = null;
+          try{
+            newDate = new SimpleDateFormat("yyyy-MM-dd").parse(ub.getdate());
+          } catch (ParseException ex) {
+              newDate = new Date();
+          }
+           if(newDate.before(thisDate))
            {
             
            Object[] row = new Object[8];
@@ -753,8 +759,8 @@ public class ViewJPanel extends javax.swing.JPanel {
             model.addRow(row);
             
             }
-
-        }*/
+               
+        }
         
     }//GEN-LAST:event_btnfind5ActionPerformed
 
