@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="342" pref="342" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblten" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbleleven" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="lblsearch" min="-2" pref="65" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="txtsearch1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="lblavailable" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblmodel" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                          <Component id="lblserial" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                          <Component id="lblyear" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                          <Component id="lblmanufact" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                          <Component id="lblmaintenance" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblcity" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                          <Component id="lblseat" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="txtcity" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="txtyear" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="txtmaintenance" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="txtmodel" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="txtserial" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="txtmanufact" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="txtseat" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="txtavailable" min="-2" pref="119" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblfirst" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbltwo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblthree" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblfour" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblfive" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblsix" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblseven" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbleight" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblnine" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
+                              <Component id="btnvsave" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="txtsearch2" max="32767" attributes="0"/>
+                                          <Component id="btnfind2" max="32767" attributes="0"/>
+                                          <Component id="txtsearch3" max="32767" attributes="0"/>
+                                          <Component id="btnfind3" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="txtsearch4" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtsearch5" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtsearch6" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtsearch7" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="btnfind5" alignment="1" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                              <Component id="spinnermin" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="spinnermax" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="btnfind6" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="btnView" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="btnUpdate" min="-2" pref="67" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnDelete" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnfind1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtfleet" min="-2" pref="114" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="351" max="-2" attributes="0"/>
+              <Component id="lblTitle" min="-2" pref="81" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="lblTitle" min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="131" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblsearch" alignment="1" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnView" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnUpdate" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnDelete" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtsearch1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnfind1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblmanufact" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="txtmanufact" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblfirst" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblmodel" min="-2" pref="31" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbltwo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnfind2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnfind6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblserial" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="txtserial" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblthree" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtsearch2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblseat" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="txtseat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="lblfour" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtsearch3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblcity" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="txtcity" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblfive" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnfind3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="spinnermin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="spinnermax" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblyear" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="txtyear" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblsix" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtsearch4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblmaintenance" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="txtmaintenance" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblseven" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtsearch5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtmodel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblavailable" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Component id="txtsearch6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="btnvsave" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblnine" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtfleet" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblten" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtsearch7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbleleven" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnfind5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="txtavailable" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbleight" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblTitle">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="View"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tblUberdata">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="8" rowCount="4">
+                <Column editable="false" title="Manufacturer" type="java.lang.Object"/>
+                <Column editable="false" title="Model " type="java.lang.Object"/>
+                <Column editable="false" title="Serial Number" type="java.lang.Object"/>
+                <Column editable="false" title="Number of Seats" type="java.lang.Object"/>
+                <Column editable="false" title="City" type="java.lang.Object"/>
+                <Column editable="false" title="Manufactured year" type="java.lang.Object"/>
+                <Column editable="false" title="Maintenance Cerificate Date" type="java.lang.Object"/>
+                <Column editable="false" title="Available" type="java.lang.Object"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btnView">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="View"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnUpdate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Update"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblmodel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="2.Model  :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtcity">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblserial">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="3.Serial Number:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtyear">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtmaintenance">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblseat">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="4.Seats:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblcity">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="5.City:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblyear">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="6. Manufactured Year:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblmaintenance">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="7.Maintenance certificate date:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblmanufact">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="1.Manufacturer :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtmodel">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtserial">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtmanufact">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtseat">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnDelete">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Delete"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnvsave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnvsaveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtavailable">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblavailable">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="8.Available"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblsearch">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Search :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnfind1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Find."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfind1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtsearch1">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtsearch1ActionPerformed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtsearch1KeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblfirst">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1.Find me the first available passenger car:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbltwo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2.how many cars are available and not available"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblthree">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3.List all the car that are made by :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblfour">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4.List the car of manufracture year of:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnfind2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Availabel"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfind2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtsearch2">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtsearch2KeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtsearch3">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtsearch3KeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblfive">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5.List all car with min x and max y seats:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblsix">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="6.Find car with given Serial Number:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblseven">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="7.list the car of model :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblten">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="10.list all car in given city:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbleight">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="8.list all car manufacturer:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblnine">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="9.last fleet updation date:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbleleven">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="11.list all car that expire maintenance cert.:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnfind3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Find."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfind3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtsearch4">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtsearch4KeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtsearch5">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtsearch5KeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtsearch6">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtsearch6KeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtsearch7">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtsearch7KeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnfind5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Find."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfind5ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JSpinner" name="spinnermin">
+    </Component>
+    <Component class="javax.swing.JSpinner" name="spinnermax">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnfind6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Unavailabel"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfind6ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtfleet">
+    </Component>
+  </SubComponents>
+</Form>
