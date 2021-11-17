@@ -22,7 +22,7 @@ public class customermenu extends javax.swing.JPanel {
         
         initComponents();
         this.userProcessContainer=userProcessContainer;
-        this.ecosystem=ecosystem;
+        this.ecosystem=ecosystem ;
     }
 
     /** This method is called from within the constructor to
