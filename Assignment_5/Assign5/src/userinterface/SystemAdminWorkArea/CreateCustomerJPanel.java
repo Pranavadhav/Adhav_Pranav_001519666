@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class CreateCustomerJPanel extends javax.swing.JPanel {
 

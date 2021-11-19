@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class ModifyDeliveryManJPanel extends javax.swing.JPanel {
 
@@ -78,11 +78,13 @@ public class ModifyDeliveryManJPanel extends javax.swing.JPanel {
         jLabel2.setText("Name*:");
 
         txtName.setEditable(false);
+        txtName.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel4.setText("Email Address*:");
 
         txtEmailAddress.setEditable(false);
+        txtEmailAddress.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel5.setText("Age*:");

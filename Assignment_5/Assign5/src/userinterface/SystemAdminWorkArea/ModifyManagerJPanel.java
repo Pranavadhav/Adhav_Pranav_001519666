@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class ModifyManagerJPanel extends javax.swing.JPanel {
 

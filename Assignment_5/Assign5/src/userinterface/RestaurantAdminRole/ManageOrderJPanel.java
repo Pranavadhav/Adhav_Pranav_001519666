@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class ManageOrderJPanel extends javax.swing.JPanel {
 

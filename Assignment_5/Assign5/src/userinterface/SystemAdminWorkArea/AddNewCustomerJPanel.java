@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author prasanna 
+ * @author pranav 
  */
 public class AddNewCustomerJPanel extends javax.swing.JPanel {
 

@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class ManageRestaurantMenuJPanel extends javax.swing.JPanel {
 private JPanel userProcessContainer;

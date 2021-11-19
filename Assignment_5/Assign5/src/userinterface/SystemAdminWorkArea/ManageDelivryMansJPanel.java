@@ -8,7 +8,7 @@ package userinterface.SystemAdminWorkArea;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class ManageDelivryMansJPanel extends javax.swing.JPanel {
 

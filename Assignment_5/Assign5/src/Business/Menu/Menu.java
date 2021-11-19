@@ -7,7 +7,7 @@ package Business.Menu;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class Menu {
     private String itemName;

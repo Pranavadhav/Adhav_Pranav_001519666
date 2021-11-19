@@ -7,7 +7,7 @@ package Business.Item;
 
 /**
  *
- * @author prasanna
+ * @author Pranav
  */
 public class Item {
     double price;

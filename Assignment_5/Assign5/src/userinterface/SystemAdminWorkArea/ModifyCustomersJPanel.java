@@ -7,7 +7,7 @@ package userinterface.SystemAdminWorkArea;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class ModifyCustomersJPanel extends javax.swing.JPanel {
 
@@ -44,7 +44,6 @@ public class ModifyCustomersJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        lblSSN.setFont(new java.awt.Font("Berlin Sans FB", 0, 12)); // NOI18N
         lblSSN.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblSSN.setText("Mobile Number");
 
@@ -56,7 +55,6 @@ public class ModifyCustomersJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblHeight.setFont(new java.awt.Font("Berlin Sans FB", 0, 12)); // NOI18N
         lblHeight.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblHeight.setText("Email Adress");
 
@@ -92,11 +90,9 @@ public class ModifyCustomersJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblDateOfBirth.setFont(new java.awt.Font("Berlin Sans FB", 0, 12)); // NOI18N
         lblDateOfBirth.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblDateOfBirth.setText("Username");
 
-        lblWeight.setFont(new java.awt.Font("Berlin Sans FB", 0, 12)); // NOI18N
         lblWeight.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblWeight.setText("Home Adress");
 
@@ -107,11 +103,9 @@ public class ModifyCustomersJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblAge.setFont(new java.awt.Font("Berlin Sans FB", 0, 12)); // NOI18N
         lblAge.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblAge.setText("password");
 
-        lblSSN1.setFont(new java.awt.Font("Berlin Sans FB", 0, 12)); // NOI18N
         lblSSN1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblSSN1.setText("Age");
 

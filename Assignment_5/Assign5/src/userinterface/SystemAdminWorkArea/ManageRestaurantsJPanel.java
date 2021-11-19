@@ -7,7 +7,7 @@ package userinterface.SystemAdminWorkArea;
 
 /**
  *
- * @author prasanna
+ * @author pranav
  */
 public class ManageRestaurantsJPanel extends javax.swing.JPanel {
 
