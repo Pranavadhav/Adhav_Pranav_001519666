@@ -1,0 +1,167 @@
+ to run kafka composer 
+ docker exec -it 3836202357e6 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test_topic
+To run spark submit command
+ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0 --conf "spark.pyspark.python=python" real_data.py
+
+  org.apache.hadoop:hadoop-aws:3.2.0,com.amazonaws:aws-java-sdk-bundle:1.11.1000
+
+
+  spark = SparkSession.builder.appName("write_real_data_topic")\
+        .config("spark.hadoop.fs.s3a.access.key", "AKIASBZ6GWNEWENWAV5G") \
+        .config("spark.hadoop.fs.s3a.secret.key", "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") \
+        .config("spark.hadoop.fs.s3a.endpoint", "s3-us-east-1.amazonaws.com") \
+        .getOrCreate()
+spark.sparkContext.setLogLevel("WARN") # Reduce logging verbosity
+
+
+
+df = spark.readStream.format("kafka")\
+    .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS) \
+    .option("subscribe", KAFKA_TOPIC) \
+    .option("startingOffsets", "earliest") \
+    .load()
+
+value_col = "value"
+parsed_json_col = "parsed_json"
+
+df_parsed = df.selectExpr("CAST(value AS STRING) AS value") \
+    .select(from_json("value", json_schema).alias(parsed_json_col)) \
+    .selectExpr(f"{parsed_json_col}.*")
+
+df_parsed.writeStream \
+    .format("console") \
+    .option("path", "s3a://realstorage/temp/") \
+    .outputMode("append") \
+    .start() \
+    .awaitTermination()
+
+value_col = "value"
+parsed_json_col = "parsed_json"
+
+df_parsed = df.selectExpr("CAST(value AS STRING) AS value") \
+    .select(from_json("value", json_schema).alias(parsed_json_col)) \
+    .selectExpr(f"{parsed_json_col}.*")
+
+
+
+df.writeStream \
+    .outputMode("append") \
+    .format("console") \
+    .start() \
+    .awaitTermination()
+
+
+running command for kafka 
+kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test_topic
+
+
+zookeeper:
+    image: docker.io/bitnami/zookeeper:3.8
+    ports:
+      - "2181:2181"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    image: docker.io/bitnami/kafka:3.3
+    ports:
+      - "9092:9092"
+    environment:
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
+    depends_on:
+      - zookeeper
+
+
+    to write data on s3
+
+    spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.1 --conf spark.hadoop.fs.s3a.access.key=AKIASBZ6GWNEWENWAV5G --conf spark.hadoop.fs.s3a.secret.key=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 test_stream.py
+
+    NOICE!!!
+
+
+
+    real data 
+
+    from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, TimestampType, LongType
+from pyspark.sql.functions import from_json
+
+KAFKA_BOOTSTRAP_SERVERS = "localhost:9092"
+KAFKA_TOPIC = "test_topic"
+
+# Define the schema for the incoming JSON messages
+json_schema = StructType([
+    StructField("Index", StringType(), True),
+    StructField("Open", StringType(), True),
+    StructField("High", StringType(), True),
+    StructField("Low", StringType(), True),
+    StructField("Close", StringType(), True),
+    StructField("Adj Close", StringType(), True),
+    StructField("Volume", StringType(), True),  # Assuming this is the Volume column
+    StructField("CloseUSD", StringType(), True)
+])
+
+spark = SparkSession.builder.appName("write_real_data_topic")\
+        .getOrCreate()
+spark.sparkContext.setLogLevel("WARN") # Reduce logging verbosity
+
+
+
+df = spark.readStream.format("kafka")\
+    .option("kafka.bootstrap.servers", "localhost:9092") \
+    .option("subscribe", "test_topic") \
+    .load()
+
+df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
+
+df.writeStream \
+    .outputMode("append") \
+    .format("console") \
+    .start() \
+    .awaitTermination()
+
+    - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
+
+
+    Challenges Face:
+    kafka cannot connect to local python so we port displaying externally / chnage config  
+    move python to docker but still python is going down immidiately after tunning so we added code which keep it running by adding one terminal to it 
+    spark cannot able to connect kafka so added haddop jar file 
+    problem to connecting to s3 check prmision using boto3 then permisiom was fine added s3a and keys in spark submit command
+    to write streaming data you need to writeStream function you cant simpli us write and it has its own parameter option for eg instead of mode it has outputMode
+
+
+    steps:
+    create docker compose file:
+      In that write code to install :
+        kafka 3.3 
+        zookeeper 3.8 (To manage kafka server )(for above kafka 3.4 no need of zookeeper its inbuild)
+        Spark master 3.3 (for manage spark worker)
+        spark worker 3.3 (To run actual process)
+        you can use local python but in my case it didnt work so install on docker
+    run docker compose : docker-compose up !!! to close :docker-compose down
+
+    After running all the container 
+    1. Start new terminal and lauch kafka producer in that 
+      1.do docker ps and get id of the container 
+      2. docker exec -it 0d3862361273 bash replace with that id and use command to get into it 
+      3. after getting into that  kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test_topic 
+
+    2. Start new terminal and lauch kafka consumer in that and see if data your are genrating are coming or not 
+    same producer but kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test_topic
+
+    if you are generating data from python
+      write docker file to give libraries you want in your code 
+      write .py file where ypu streaming data (use confluent kafka to connect with your server)
+      copy your .py file and data into python container docker cp real_data.py f68dda84915f:/
+      open terminal to get into it docker exec -it f68dda84915f bash 
+      run your python file that you copied using python real_data.py
+    
+    3.write another .py with light transforamtion
+    run it with spark-submit (it will use spark to process that paralley)
+    add libraries in spark submit to run 
+    spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.1 --conf spark.hadoop.fs.s3a.access.key=AKIASBZ6GWNEWENWAV5G --conf spark.hadoop.fs.s3a.secret.key=AKef0E9vwALGKjVGjWsMASS7OpUvlq5zLGBl73/P --conf "spark.pyspark.python=python" test_stream.py
+    it load your data to amazon s3
+
+
