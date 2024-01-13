@@ -3,8 +3,8 @@ from pyspark.sql.types import StructType, StructField, StringType, IntegerType, 
 from pyspark.sql.functions import from_json
 
 # Create a SparkSession
-aws_id = "AKIASBZ6GWNEWENWAV5G"
-aws_key = "AKef0E9vwALGKjVGjWsMASS7OpUvlq5zLGBl73/P"
+aws_id = "your aws key"
+aws_key = "your aws secret key"
 
 # spark = SparkSession.builder.appName("SparkTest").getOrCreate()
 
