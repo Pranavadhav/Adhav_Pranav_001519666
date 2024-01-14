@@ -30,4 +30,15 @@ steps:
     spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.1 --conf spark.hadoop.fs.s3a.access.key=access_key --conf spark.hadoop.fs.s3a.secret.key=secret_key --conf "spark.pyspark.python=python" test_stream.py
     it load your data to amazon s3
 
+    
+    4. Once your data is on S3 you can create crawler to load that into redshift	
+    go to aws glue-> crawler then create new craewler and crawl the "whole Folder" where your s3 data in
+	in my case it has some spark metadata it wont able to crawl to resolve this
+	 i have created new folder and create new trigger whenever you will receive new file(only file cause genrally metadatas are folders) it will move it to new folder
+    once you data crawl from s3 it will store it into into one table data catlog
+    you can see this data using aws athena 
+    Now you can create new cluster to create data warehouse in Redshift 
+    use aws Glue to load the data from aws s3 to redshift
+    after getting data into redshift with help of DBT or sql move data to structred tables 
+    visalize this structred data using quicksight(used quicksight cause integrated with aws)
 
