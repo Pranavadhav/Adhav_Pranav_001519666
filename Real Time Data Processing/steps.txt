@@ -27,7 +27,7 @@ steps:
     3.write another .py with light transforamtion
     run it with spark-submit (it will use spark to process that paralley)
     add libraries in spark submit to run 
-    spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.1 --conf spark.hadoop.fs.s3a.access.key=AKIASBZ6GWNEWENWAV5G --conf spark.hadoop.fs.s3a.secret.key=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 --conf "spark.pyspark.python=python" test_stream.py
+    spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.1 --conf spark.hadoop.fs.s3a.access.key=access_key --conf spark.hadoop.fs.s3a.secret.key=secret_key --conf "spark.pyspark.python=python" test_stream.py
     it load your data to amazon s3
 
 
