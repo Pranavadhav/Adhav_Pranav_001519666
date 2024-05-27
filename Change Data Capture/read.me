@@ -1,1 +1,9 @@
-
+MySQL = OLTP (current)
+Postgres = data warehouse (cuurent + historical data) 
+1. load sales.sql into mysql
+2. load sales_csv into Postgres
+3. load remaining data of my sql to postgres increament 
+  1. use python script to load   
+  or
+  2. use bash script to load
+4. automate above script with help of Airflow
