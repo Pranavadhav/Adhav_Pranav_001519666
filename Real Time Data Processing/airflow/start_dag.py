@@ -10,10 +10,16 @@ default_args = {
 }
 
 dag = DAG(
-    'my_spark_dag',
+    'start_real_time_stock_market_pipeline',
     default_args=default_args,
-    description='DAG for Spark Streaming Job',
-    schedule_interval='@daily',  # Set the desired schedule interval
+    description='Start DAG for Spark Streaming Job and Kafka Management',
+    schedule_interval='0 9 * * *',  # Schedule to run daily at 9 AM
+)
+
+start_kafka = BashOperator(
+    task_id='start_kafka',
+    bash_command='systemctl start kafka',  
+    dag=dag,
 )
 
 spark_command = """
@@ -26,4 +32,5 @@ run_spark_job = BashOperator(
     dag=dag,
 )
 
-run_spark_job
+start_kafka >> run_spark_job
+
