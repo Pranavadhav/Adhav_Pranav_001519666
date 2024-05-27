@@ -18,7 +18,7 @@ dag = DAG(
 
 start_kafka = BashOperator(
     task_id='start_kafka',
-    bash_command='systemctl start kafka',  
+    bash_command='docker exec -it <kafka_container_id> kafka-server-start.sh',  
     dag=dag,
 )
 
